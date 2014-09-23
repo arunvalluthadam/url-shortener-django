@@ -1,0 +1,7 @@
+{% url "redirect_short_url" short_url=object.pk as short_url %}
+
+<center style="position: absolute;top: 200px;left: 200px">
+<div><p> <h3>Original Link: {{ object.url }}</h3></p></div>
+
+<div><p><h1> Short Link: <a href="{{ short_url }}">http://localhost:8000/link{{ short_url }}</a></h1></p></div>
+</center>
